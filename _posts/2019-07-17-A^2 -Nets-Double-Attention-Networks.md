@@ -12,12 +12,7 @@ tags:
     - Self-attention
     - DeepLearning
 ---
-在这篇论文中作者基于 self-attention 机制和 SENet 的启发，提出了double attention 机制(
-$$
-A^2
-$$
--block)，其核心思想是首先将整个空间的关键特征收集到一个紧凑的集合中，然后自适应地将它们分配到每个位置，以便后续的卷积层即使没有大的感受野可以感知整个空间的特征。
-
+在这篇论文中作者基于 self-attention 机制和 SENet 的启发，提出了double attention 机制。其核心思想是首先将整个空间的关键特征收集到一个紧凑的集合中，然后自适应地将它们分配到每个位置，以便后续的卷积层即使没有大的感受野可以感知整个空间的特征。
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 
 [论文链接][paper-link]
@@ -104,7 +99,7 @@ $$
    $$
    O(m(dhw)^2)
    $$
-   所以本文利用乘法结合率，大大降低了 non-local operation 或者说 self-attention 的计算量，本质上与non-local operation没有任何区别，而在使用结合律的时候加入 softmax 进行归一化可以理解为对于某一维度进行了近似表示，再根据这组近似表示去更新context([参考][OCNet大佬解读])。
+   ，所以本文利用乘法结合率，大大降低了 non-local operation 或者说 self-attention 的计算量，本质上与non-local operation没有任何区别，而在使用结合律的时候加入 softmax 进行归一化可以理解为对于某一维度进行了近似表示，再根据这组近似表示去更新context([参考][OCNet大佬的解读])。
 
 [paper-link]: https://arxiv.org/abs/1810.11579
 [SENet-link]: https://arxiv.org/abs/1709.01507
