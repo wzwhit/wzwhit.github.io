@@ -10,7 +10,7 @@ catalog:     true
 tags:
     - Non-local-opteration
     - Self-attention
-	- DeepLearning
+    - DeepLearning
 ---
 在深度神经网络中捕捉长距离依赖(long-range dependencies)是非常重要的，对于图片数据，传统的方法是通过堆叠卷积操作扩大感受野来获得长距离依赖。作者在这篇论文中受计算机视觉中传统的 non-local means 方法的启发，提出了 non-local operation 来捕捉长距离依赖。
 
