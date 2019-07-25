@@ -60,6 +60,17 @@ $$
 $$
 \frac{D_K*D_K*M *D_F *D_F+M*N*D_F*D_F}{D_K*D_K*M*N*D_F*D_F}=\frac{1}{N}+\frac{1}{D_K^2}
 $$
+
+一般输出维度 N 比较大，因此
+$$
+\frac{1}{N} << \frac{1}{D_K^2}
+$$
+，一般卷积核尺寸
+$$
+D_K^2=3
+$$
+，所以参数量相比普通卷积减少了 8 到 9 倍。
+
 深度可分离卷积结构如下图右边所示，左边为标准卷积：
 
 ![2.png]({{ site.url }}/img/MobileNet/mobilenet-2.png)
