@@ -25,13 +25,13 @@ ICCAS 2019的一篇车道线检测论文。文章使用了自己的车道线数�
 
 1. 语义分割网络模型如下表所示，就是简单的卷积加反卷积的 U 型结构。损失函数使用的是  soft dice loss。
 
-   ![2.png]({{ site.url }}/img/Multi-lane Detection Using Instance Segmentation and Attentive Voting/2.PNG)
+   ![2.png]({{ site.url }}/img/Multi-lane Detection Using Instance Segmentation and Attentive Voting/2.png)
 
 2. 实例检测使用的是广度优先搜索算法。这之后进行透视变换是为了减小之后拟合曲线的多项式次数。
 
 3. 无监督的 Attentive Voting 示意图如下所示：
 
-   ![3.png]({{ site.url }}/img/Multi-lane Detection Using Instance Segmentation and Attentive Voting/3.PNG)
+   ![3.png]({{ site.url }}/img/Multi-lane Detection Using Instance Segmentation and Attentive Voting/3.png)
 
    图中 Li 代表车道线掩码实例，
    $$
@@ -59,10 +59,10 @@ ICCAS 2019的一篇车道线检测论文。文章使用了自己的车道线数�
 
 速度：
 
-![4.png]({{ site.url }}/img/Multi-lane Detection Using Instance Segmentation and Attentive Voting/4.PNG)
+![4.png]({{ site.url }}/img/Multi-lane Detection Using Instance Segmentation and Attentive Voting/4.png)
 
 可视化：
 
-![5.png]({{ site.url }}/img/Multi-lane Detection Using Instance Segmentation and Attentive Voting/5.PNG)
+![5.png]({{ site.url }}/img/Multi-lane Detection Using Instance Segmentation and Attentive Voting/5.png)
 
 [paper-link]: https://arxiv.org/abs/2001.00236
