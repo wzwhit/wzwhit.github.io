@@ -57,11 +57,7 @@ $$
 
 ## Experiment
 
-速度：
-
 ![4.png]({{ site.url }}/img/0225/4.png)
-
-可视化：
 
 ![5.png]({{ site.url }}/img/0225/5.png)
 
