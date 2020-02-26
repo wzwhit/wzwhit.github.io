@@ -63,7 +63,7 @@ $$
 
 可视化：
 
-​	![5.png]({{ site.url }}/img/0225/5.png)
+![5.png]({{ site.url }}/img/0225/5.png)
 
 
 
